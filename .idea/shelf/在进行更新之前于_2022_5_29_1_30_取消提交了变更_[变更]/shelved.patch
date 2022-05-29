@@ -1,0 +1,141 @@
+Index: 使用说明/说明.txt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>所用工作平台和设计软件：\r\n\r\nJava EE:用于写后台代码，链接数据库。\r\nSql server 2012 数据库：用于存放数据。\r\nDreamweaver：Html,css样式等的编写，搭建网站结构。\r\nPhotoshop：进行图片修饰，制作logo。\r\nFlash：用于制作Flash动画。\r\nXmind:用于制作网站功能模块图，网站架构图。\r\n\r\n\r\n数据库账号:sa qwe1314521\r\n\r\n使用方法:1:下载后导入自己的工作空间\r\n         2:还原sqlserver数据库\r\n         3:修改数据库账号密码为你的即可\r\n\r\n由于时间问题,尚存在部分bug：\r\n    1.购买物品数据库的主键应该加上购买时间，目前不能重复购买\r\n    2.从购物车删除后应该放到另一个表,类似于淘宝的足迹\r\n    3.字符集问题，有的Eclipse不必转换，注意乱码问题\r\n\r\n有问题下方评论
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>GBK
+===================================================================
+diff --git a/使用说明/说明.txt b/使用说明/说明.txt
+--- a/使用说明/说明.txt	(revision b0ca1c868b00104ef1838f49977bf4916cc50be2)
++++ b/使用说明/说明.txt	(date 1653757258258)
+@@ -1,22 +1,7 @@
+-所用工作平台和设计软件：
+-
+-Java EE:用于写后台代码，链接数据库。
+-Sql server 2012 数据库：用于存放数据。
+-Dreamweaver：Html,css样式等的编写，搭建网站结构。
+-Photoshop：进行图片修饰，制作logo。
+-Flash：用于制作Flash动画。
+-Xmind:用于制作网站功能模块图，网站架构图。
+ 
+ 
+-数据库账号:sa qwe1314521
+-
+-使用方法:1:下载后导入自己的工作空间
+-         2:还原sqlserver数据库
+-         3:修改数据库账号密码为你的即可
++数据库账号:root 001227（数据库是Hg_Snacks)Mysql版本
+ 
+ 由于时间问题,尚存在部分bug：
+-    1.购买物品数据库的主键应该加上购买时间，目前不能重复购买
+-    2.从购物车删除后应该放到另一个表,类似于淘宝的足迹
+-    3.字符集问题，有的Eclipse不必转换，注意乱码问题
+-
+-有问题下方评论
+\ No newline at end of file
++       1.购买物品不能重复购买
++       2.中文商品可能出现乱码问题
+Index: README.md
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># TdSnacks\r\n\r\n#### 项目介绍\r\n本项目开源但不允许商用，仅用于学习交流。\r\n\r\n#### 软件架构\r\n本网站使用纯JSP作为网站后台代码，对于SSH或SSM框架学习的开发人员没有多少借鉴意义，这样的大神请绕道。\r\n本项目只是为了参加校内比赛，时间问题，有部分小bug，请读者根据说明提示，自行改正。\r\n\r\n#### 安装教程\r\n\r\n1. 克隆或下载本项目代码，并导入自己工作空间。\r\n2. 还原数据库,我的数据库版本是sqlserver 2012\r\n3. 修改数据的账号和密码,我的为 sa qwe1314521(Eclipse有项目内全局替换功能)\r\n\r\n#### 使用说明\r\n\r\n详见说明\r\n\r\n#### 参与贡献\r\n\r\n1. Fork 本项目\r\n2. 新建 Feat_xxx 分支\r\n3. 提交代码\r\n4. 新建 Pull Request\r\n\r\n\r\n#### 我的csdn博客\r\nhttps://blog.csdn.net/lady_killer9\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/README.md b/README.md
+--- a/README.md	(revision b0ca1c868b00104ef1838f49977bf4916cc50be2)
++++ b/README.md	(date 1653757097043)
+@@ -1,17 +1,8 @@
+-# TdSnacks
+-
+-#### 项目介绍
+-本项目开源但不允许商用，仅用于学习交流。
++# HgSnacks
+ 
+-#### 软件架构
+-本网站使用纯JSP作为网站后台代码，对于SSH或SSM框架学习的开发人员没有多少借鉴意义，这样的大神请绕道。
+-本项目只是为了参加校内比赛，时间问题，有部分小bug，请读者根据说明提示，自行改正。
++#### 项目作者
++学校：华南理工大学 班级：19网络工程 学号：201930341038 姓名：郭梓炀
+ 
+-#### 安装教程
+-
+-1. 克隆或下载本项目代码，并导入自己工作空间。
+-2. 还原数据库,我的数据库版本是sqlserver 2012
+-3. 修改数据的账号和密码,我的为 sa qwe1314521(Eclipse有项目内全局替换功能)
+ 
+ #### 使用说明
+ 
+@@ -24,6 +15,3 @@
+ 3. 提交代码
+ 4. 新建 Pull Request
+ 
+-
+-#### 我的csdn博客
+-https://blog.csdn.net/lady_killer9
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"ArtifactsWorkspaceSettings\">\r\n    <artifacts-to-build>\r\n      <artifact name=\"HgSnacks-master - 副本:Web exploded\" />\r\n    </artifacts-to-build>\r\n  </component>\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3ebf82b6-7e3c-40f6-a609-44bccaa0d3e0\" name=\"变更\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"CompilerWorkspaceConfiguration\">\r\n    <option name=\"MAKE_PROJECT_ON_SAVE\" value=\"true\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"Tag Library Descriptor\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"LogFilters\">\r\n    <option name=\"FILTER_ERRORS\" value=\"false\" />\r\n    <option name=\"FILTER_WARNINGS\" value=\"false\" />\r\n    <option name=\"FILTER_INFO\" value=\"true\" />\r\n    <option name=\"FILTER_DEBUG\" value=\"true\" />\r\n    <option name=\"CUSTOM_FILTER\" />\r\n  </component>\r\n  <component name=\"MarkdownSettingsMigration\">\r\n    <option name=\"stateVersion\" value=\"1\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"228CnhejP9RUGfwpH68kPV347g4\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"last_opened_file_path\": \"C:/Users/HW/Desktop/HgSnacks-master\",\r\n    \"project.structure.last.edited\": \"模块\",\r\n    \"project.structure.proportion\": \"0.15\",\r\n    \"project.structure.side.proportion\": \"0.2\",\r\n    \"settings.editor.selected.configurable\": \"advanced.settings\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Tomcat 服务器.Tomcat 9.0.55\">\r\n    <configuration name=\"index.html\" type=\"JavascriptDebugType\" temporary=\"true\" nameIsGenerated=\"true\" uri=\"http://localhost:63342/HgSnacks-master - 副本/classes/artifacts/HgSnacks_master____Web_exploded/shuffling/index.html\" useBuiltInWebServerPort=\"true\">\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Tomcat 9.0.55\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" APPLICATION_SERVER_NAME=\"Tomcat 9.0.55\" ALTERNATIVE_JRE_ENABLED=\"false\">\r\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\r\n      <deployment>\r\n        <artifact name=\"HgSnacks-master - 副本:Web exploded\">\r\n          <settings>\r\n            <option name=\"CONTEXT_PATH\" value=\"/HgSnacks_master____Web_exploded\" />\r\n          </settings>\r\n        </artifact>\r\n      </deployment>\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"dc844079-4064-4de1-97d0-bfc9595ec8e4\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"57388\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Profile\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n        <option name=\"BuildArtifacts\" enabled=\"true\">\r\n          <artifact name=\"HgSnacks-master - 副本:Web exploded\" />\r\n        </option>\r\n      </method>\r\n    </configuration>\r\n    <configuration default=\"true\" type=\"#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory\" factoryName=\"Local\" ALTERNATIVE_JRE_ENABLED=\"false\">\r\n      <option name=\"UPDATING_POLICY\" value=\"restart-server\" />\r\n      <deployment />\r\n      <server-settings>\r\n        <option name=\"BASE_DIRECTORY_NAME\" value=\"dc844079-4064-4de1-97d0-bfc9595ec8e4\" />\r\n      </server-settings>\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat\" />\r\n      <predefined_log_file enabled=\"true\" id=\"Tomcat Catalina\" />\r\n      <predefined_log_file id=\"Tomcat Manager\" />\r\n      <predefined_log_file id=\"Tomcat Host Manager\" />\r\n      <predefined_log_file id=\"Tomcat Localhost Access\" />\r\n      <RunnerSettings RunnerId=\"Debug\">\r\n        <option name=\"DEBUG_PORT\" value=\"57388\" />\r\n      </RunnerSettings>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Cover\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Debug\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Profile\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <ConfigurationWrapper VM_VAR=\"JAVA_OPTS\" RunnerId=\"Run\">\r\n        <option name=\"USE_ENV_VARIABLES\" value=\"true\" />\r\n        <STARTUP>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </STARTUP>\r\n        <SHUTDOWN>\r\n          <option name=\"USE_DEFAULT\" value=\"true\" />\r\n          <option name=\"SCRIPT\" value=\"\" />\r\n          <option name=\"VM_PARAMETERS\" value=\"\" />\r\n          <option name=\"PROGRAM_PARAMETERS\" value=\"\" />\r\n        </SHUTDOWN>\r\n      </ConfigurationWrapper>\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JavaScript 调试.index.html\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"应用程序级\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"3ebf82b6-7e3c-40f6-a609-44bccaa0d3e0\" name=\"变更\" comment=\"\" />\r\n      <created>1639209996962</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1639209996962</updated>\r\n      <workItem from=\"1639209998356\" duration=\"38000\" />\r\n      <workItem from=\"1639210045472\" duration=\"6253000\" />\r\n      <workItem from=\"1639299541788\" duration=\"230000\" />\r\n      <workItem from=\"1639299943935\" duration=\"159000\" />\r\n      <workItem from=\"1639304097991\" duration=\"4337000\" />\r\n      <workItem from=\"1639313675298\" duration=\"2987000\" />\r\n      <workItem from=\"1639359550771\" duration=\"1594000\" />\r\n      <workItem from=\"1639362133702\" duration=\"7319000\" />\r\n      <workItem from=\"1639969809077\" duration=\"1164000\" />\r\n      <workItem from=\"1639981789713\" duration=\"19000\" />\r\n      <workItem from=\"1640071190610\" duration=\"1472000\" />\r\n      <workItem from=\"1640072697710\" duration=\"10153000\" />\r\n      <workItem from=\"1640094835722\" duration=\"7145000\" />\r\n      <workItem from=\"1640136855576\" duration=\"12530000\" />\r\n      <workItem from=\"1640160453479\" duration=\"7110000\" />\r\n      <workItem from=\"1640172654273\" duration=\"48932000\" />\r\n      <workItem from=\"1652670975944\" duration=\"1371000\" />\r\n      <workItem from=\"1652928907532\" duration=\"3291000\" />\r\n      <workItem from=\"1653052490872\" duration=\"2429000\" />\r\n      <workItem from=\"1653312306660\" duration=\"2433000\" />\r\n      <workItem from=\"1653364930809\" duration=\"2639000\" />\r\n      <workItem from=\"1653396651407\" duration=\"6655000\" />\r\n      <workItem from=\"1653443784293\" duration=\"2119000\" />\r\n      <workItem from=\"1653447967005\" duration=\"1468000\" />\r\n      <workItem from=\"1653456914959\" duration=\"4476000\" />\r\n      <workItem from=\"1653481641777\" duration=\"29674000\" />\r\n      <workItem from=\"1653568800631\" duration=\"103000\" />\r\n      <workItem from=\"1653569107975\" duration=\"40364000\" />\r\n      <workItem from=\"1653731430303\" duration=\"9196000\" />\r\n    </task>\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision b0ca1c868b00104ef1838f49977bf4916cc50be2)
++++ b/.idea/workspace.xml	(date 1653758584036)
+@@ -9,7 +9,11 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3ebf82b6-7e3c-40f6-a609-44bccaa0d3e0" name="变更" comment="" />
++    <list default="true" id="3ebf82b6-7e3c-40f6-a609-44bccaa0d3e0" name="变更" comment="">
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/使用说明/说明.txt" beforeDir="false" afterPath="$PROJECT_DIR$/使用说明/说明.txt" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -25,6 +29,9 @@
+         <option value="Class" />
+       </list>
+     </option>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="GitSEFilterConfiguration">
+     <file-type-list>
+@@ -45,6 +52,7 @@
+     <option name="stateVersion" value="1" />
+   </component>
+   <component name="ProjectId" id="228CnhejP9RUGfwpH68kPV347g4" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+@@ -270,11 +278,22 @@
+       <workItem from="1653481641777" duration="29674000" />
+       <workItem from="1653568800631" duration="103000" />
+       <workItem from="1653569107975" duration="40364000" />
+-      <workItem from="1653731430303" duration="9196000" />
++      <workItem from="1653731430303" duration="11380000" />
+     </task>
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+     <option name="version" value="3" />
+   </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
++  </component>
+ </project>
+\ No newline at end of file

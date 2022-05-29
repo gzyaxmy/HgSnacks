@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/Td_snacks_tablegoods.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createHg_Snacks_table_carts.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createHg_Snacks_table_goods.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createHg_Snacks_table_shop_owners.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createHg_Snacks_table_users.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createTd_Snacks_table_carts.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createTd_Snacks_table_shop_owners.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/createTd_Snacks_table_users.sql" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/sqlserver数据库备份/sql语句/说明.txt" charset="GBK" />
+    <file url="file://$PROJECT_DIR$/使用说明/说明.txt" charset="GBK" />
+  </component>
+</project>
